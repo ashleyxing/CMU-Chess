@@ -1,9 +1,11 @@
-import { ColorModeScript } from '@chakra-ui/react';
+import { ColorModeScript, Flex, Spacer } from '@chakra-ui/react';
 import React, { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom/client';
 import App from './App';
 import About from './components/About';
 import Contact from './components/Contact';
+import Events from './components/Events';
+import Footer from './components/Footer';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -20,8 +22,8 @@ root.render(
           <Route exact path='/' element={<App/>}/>
           <Route exact path='about' element={<About/>}/>
           <Route exact path='contact' element={<Contact/>}/>
+          <Route exact path='events' element={<Events/>}/>
         </Routes>
-        <ColorModeScript />
       </StrictMode>
     </BrowserRouter>
   </ChakraProvider>

@@ -8,17 +8,20 @@ import {
   Code,
   Grid,
   theme,
-  Divider
+  Divider, 
+  Flex
 } from '@chakra-ui/react';
 import Home from './components/Home'
+import Footer from './components/Footer';
 import Header from './components/navbar/Header';
 function App() {
   return (
-      <Box textAlign="center" fontSize="xl">
+      <Flex textAlign="center" fontSize="xl" direction='column'>
         <Header />
         <Divider />
         <Home/>
-      </Box>
+        <Footer/>
+      </Flex>
   );
 }
 

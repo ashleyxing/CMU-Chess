@@ -24,7 +24,7 @@ const Header = (props) => {
       {...props}
     >
       <Heading as="h1" size="lg" letterSpacing={"-.1rem"}>
-        CMU Chess Club 
+        <Link as={ReachLink} to={"/"}>CMU Chess Club </Link>
       </Heading>
       <Spacer />
       <Box display={{ base: "block", md: "none" }} onClick={handleToggle}>
@@ -47,6 +47,9 @@ const Header = (props) => {
         <Spacer />
         <MenuItems>
           <Link as={ReachLink} to={"/about"}>about</Link>
+        </MenuItems>
+        <MenuItems>
+          <Link as={ReachLink} to={"/events"}>events</Link>
         </MenuItems>
         <MenuItems>
           <Link as={ReachLink} to={"/contact"}>contact</Link>

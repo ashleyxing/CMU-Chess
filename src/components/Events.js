@@ -5,17 +5,11 @@ import Header from "./navbar/Header";
 
 const Events = () => {
     return (
-        <Box textAlign="center" fontSize="xl">
-            <Header/>
-            <Divider/>
-            <Flex h='1000' bg="gray.900" color="white" direction="column">
-                <Spacer />
-                <Center>Events</Center>
-                <Spacer />
-                <Footer/>
-            </Flex>
-
-        </Box>
+        <Flex h='700' direction='column' textAlign="center" fontSize="xl" color='white' p='24' bg='gray.900'>
+            <Spacer />
+            <Center>Nothing to see here yet... but don't worry! Plenty of tournaments and other events are coming your way in the Fall.</Center>
+            <Spacer />
+        </Flex>
     )
 }
 

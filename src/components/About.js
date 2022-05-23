@@ -6,13 +6,10 @@ import Header from "./navbar/Header";
 const About = () => {
     return (
         <Box textAlign="center" fontSize="xl">
-            <Header/>
-            <Divider/>
-            <Flex h='1000' bg="gray.900" color="white" direction="column">
+            <Flex h='700' bg="gray.900" color="white" direction="column">
                 <Spacer />
                 <Center>About</Center>
                 <Spacer />
-                <Footer/>
             </Flex>
         </Box>
     )
